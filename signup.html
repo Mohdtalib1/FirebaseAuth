@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SignUp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css">
+
+      <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+</head>
+
+<body>
+
+  <section id="auth_section">
+    <div class="container">
+      <div class="user_signin_box">
+        <div class="imgBox">
+          <img src="images/signup_bg.jpg" alt="">
+        </div>
+        <div class="form_box">
+          <form onsubmit="signUp(event)">
+            <h2>Create an account</h2>
+            <input type="text" name="" class="name" value="" placeholder="Username">
+            <select name="gender" class="gender">
+                  <option value="none" selected>Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">other</option>
+            </select>
+            <input type="text" name="" class="email" value="" placeholder="Email">
+            <input type="password" name="" class="password" value="" placeholder="Password">
+            <input type="submit" name="" value="Sign Up">
+              <div id="loader"></div>
+            <p class="signup">Already have an account ? <a href="login.html">Sign In.</a> </p>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
